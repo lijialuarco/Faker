@@ -1,12 +1,12 @@
 {
-    "name": "fzaninotto/faker",
+    "name": "lico/faker",
     "type": "library",
-    "description": "Faker is a PHP library that generates fake data for you.",
-    "keywords": ["faker", "fixtures", "data"],
+    "description": "Faker is a PHP library that generates fake data for you.add the zh_text",
+    "keywords": ["faker", "fixtures", "data","zh_text"],
     "license": "MIT",
     "authors": [
         {
-            "name": "François Zaninotto"
+            "name": "lion arco"
         }
     ],
     "require": {
@@ -29,7 +29,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.6.x-dev"
+            "dev-master": "0.1.x-dev"
         }
     }
 }
