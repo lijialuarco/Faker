@@ -1,7 +1,7 @@
 {
     "name": "lico/faker",
     "type": "library",
-    "url":"https://github.com/lijialuarco/Faker.git"
+    "url":"https://github.com/lijialuarco/Faker.git",
     "description": "Faker is a PHP library that generates fake data for you. and add the zh_text",
     "keywords": ["faker", "fixtures", "data","zh_text"],
     "license": "MIT",
