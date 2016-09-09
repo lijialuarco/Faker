@@ -113,18 +113,14 @@ EOT;
    ----------
     * * */
 
-    public function Text($length = 5, $html = true)
+    public function Text($start = 1,$end= 9, $html = true)
     {
-        $start = rand(0, 5);
-        $end = $start + $length;
-
-        if ($length < 0 || $length > 86) {
-            throw new \InvalidArgumentException('The $length must be 0~86');
+        if ($start<0 || $start > 91|| $end<0 || $end>92 || $start >$end ) {
+            throw new \InvalidArgumentException('The Argument Error');
         }
 
-
         // explode the text
-        $exploded = explode("\r\n", static::$Text);
+        $exploded = explode("\r", static::$Text);
 
         $paragraphs = array_slice($exploded, $start, $end, true);
         if ($html) {
