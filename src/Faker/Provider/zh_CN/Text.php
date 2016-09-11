@@ -109,20 +109,21 @@ EOT;
 
     /* * *
    ----------
-      the $end max is 92
+      the $end max is 90
    ----------
     * * */
 
-    public function Text($start = 1,$end= 9, $html = true)
+    public function Text($start = 1, $length = 6, $html = true)
     {
-        if ($start<0 || $start > 91|| $end<0 || $end>92 || $start >$end ) {
+        $end = $start + $length;
+        if ($start < 0 || $start > 89 || $end < 0 || $end > 90 || $start > $end) {
             throw new \InvalidArgumentException('The Argument Error');
         }
 
         // explode the text
         $exploded = explode("##", static::$Text);
 
-        $paragraphs = array_slice($exploded, $start, $end, true);
+        $paragraphs = array_slice($exploded, $start, $end);
         if ($html) {
             $paragraphs = $this->htmlFormat($paragraphs);
         }
@@ -139,7 +140,8 @@ EOT;
 
     /* * *
    ----------
-
+        add the html Label
+        @return array $paragraphs
    ----------
     * * */
 
@@ -153,6 +155,12 @@ EOT;
 
         return $paragraphs;
     }
+
+    /* * *
+   ----------
+      add the html Label
+   ----------
+    * * */
 
     protected function addLabel(&$paragraph, $label, $key)
     {
