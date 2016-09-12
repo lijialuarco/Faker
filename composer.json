@@ -2,7 +2,7 @@
   "name": "lico/faker",
   "type": "library",
   "description": "Faker is a PHP library that generates fake data for you. and add the zh_text",
-  "version":"0.1.1-dev",
+  "version":"0.1.2-dev",
   "keywords": [
     "faker",
     "fixtures",
@@ -33,10 +33,4 @@
       "Faker\\Test\\": "test/Faker/"
     }
   }
-//  "extra": {
-//    "branch-alias": {
-//      "dev-master": "0.2-dev"
-//    }
-//
-  
 }
