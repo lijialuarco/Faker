@@ -1,31 +1,40 @@
 {
-    "name": "lico/faker",
-    "type": "library",
-    "description": "Faker is a PHP library that generates fake data for you. and add the zh_text",
-    "keywords": ["faker", "fixtures", "data","zh_text"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "lion arco"
-        }
-    ],
-    "require": {
-        "php": "^5.3.3|^7.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.0",
-        "squizlabs/php_codesniffer": "~1.5",
-        "ext-intl": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "Faker\\": "src/Faker/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Faker\\Test\\": "test/Faker/"
-        }
+  "name": "lico/faker",
+  "type": "library",
+  "description": "Faker is a PHP library that generates fake data for you. and add the zh_text",
+  "keywords": [
+    "faker",
+    "fixtures",
+    "data",
+    "zh_text"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lion arco"
     }
-
+  ],
+  "require": {
+    "php": "^5.3.3|^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "squizlabs/php_codesniffer": "~1.5",
+    "ext-intl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Faker\\": "src/Faker/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Faker\\Test\\": "test/Faker/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.1.x-dev"
+    }
+  }
 }
